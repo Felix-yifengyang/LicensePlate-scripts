@@ -68,7 +68,11 @@ def normalization(xmin, ymin, xmax, ymax, img_w, img_h):
 """
 
 def get_img_size(img_path):
-    img_path = "G:/pro_dataset/License/License/images/traindata/###/" + img_name     # 原始图片路径
+    img_path = "G:/pro_dataset/License/License/images/traindata/###/" + img_name     # 原始图片路径 
+    """
+    # 这行代码有点问题，传进来的是img_path，按理说改成img_name的，但不知道为什么没有影响 
+    # 后续找到的原因可能是因为在局部变量找img_name，参数列表中也没找到img_name，但在外部的全局命名空间中查找img_name找到了。一切都是巧合
+    """
     print(img_path)
     mat = cv2.imread(img_path)
     if mat is None:
