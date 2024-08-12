@@ -6,4 +6,4 @@
 - **get_coor.py**: This is a "predict" script, and you will get the predicted images and labels. If there are 2 or more labels in one image, the txt file has 2 or more lines.
 - **clipping.py**: After running `get_coor.py`, you will get the predicted images, then by using this script, you will get the clipped and transformed(Perspective Trasformation) images.
 - **running.py**: Using the PaddleOCR to predict images.
-- - **clipping_vehicle.py**: Use `vehicle.pt` to detect the vehicle and clipping.
+- **clipping_vehicle.py**: Use `vehicle.pt` to detect the vehicle and clipping.
